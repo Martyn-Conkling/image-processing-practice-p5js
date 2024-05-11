@@ -1,0 +1,7 @@
+I do not own any of the pokemon IP sprites, 
+I downloaded them from https://pokemondb.net/pokedex/charizard 
+and pokemondb.net
+
+My goal with this project was to create a program that could programatically upscale png images
+for pixel art projects and other applications.
+I also wanted to be able to process a large number of images with an automation instead of manual work in photoshop or some image editor requiring a whole bunch of manual work for individual images.
