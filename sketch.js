@@ -2,8 +2,8 @@ let ampharos;
 let charmander;
 
 let data = {
-  xPos: 600,
-  yPos: 200,
+  xPos:0,
+  yPos: 0,
   width: 300,
   pixelDictionary: {},
   pixelArray: [],
@@ -206,7 +206,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(1900, 900);
+    createCanvas(600 , 600);
     noLoop();
     
     
@@ -236,40 +236,4 @@ function setup() {
     
 
   }
-
-
-  // Tasks left for project
-
-  // Write the code for upscaling the image
-  // DONE!
-  // Add the code to the upscaling function to add grid lines
-    // DONE!
-  // Save the new Image as a PNG file
-
-    // Write code for programatically going through a list of file names in the image folder, 
-    // And then it will load each of those images in in the preload function, 
-    // Then it will run the upscale Image function on all of the images, 
-    // Then it will export all of the NEW images as png files
-
-
-
-    // Batch running the upscaling/grid functionality on a folder of images
-    // how do I use p5.js to batch load a bunch of images?
-    // I need to use a different program to save all of the image names in a list
-    // I can do this with Node.js fs module or Python pathlib module
-    // The script should iterate through all of the images in a given folder, and save all the image names in a list,
-    // It should save this list as image-list.json or something like that, 
-    // Import image-list.json into the p5.js program
-    // Iterate over the list to load all of the images, give them a name, and save them in a list
-
-    // Iterate over the list of images to upscale the images as desired
-
-
-
-    //I also want to be able to export the data from the countAllPixelColors function, 
-    // Save the data table I create showing the color and the info
-    // Save the data as a json file with the RGBA values of all the pixels and their count
-
-
-    // Create a table or dictionary matching the closest lego color to various rgb colors
 

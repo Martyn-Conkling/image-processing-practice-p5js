@@ -9,7 +9,24 @@ const port = 3000; // Port number for the server
 // Directory containing images. Adjust the path as necessary.
 const imagesDirectory = path.join(__dirname, '../images');
 
-app.use(cors());
+// This will allow any origin to access this api... a security risk but it's fine for local dev servers on a safe network 
+// app.use(cors());
+
+app.use(cors({
+    origin: 'http://127.0.0.1:5500'
+}));
+
+/*
+//trying out specific headers, methods, and origins only
+app.use(cors({
+    origin: 'http://127.0.0.1:5500',
+    methods: ['GET', 'POST'],  // Allow only these methods
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+*/
+
+
 // Route to list images
 app.get('/list-images', (req, res) => {
     fs.readdir(imagesDirectory, (err, files) => {
